@@ -31,7 +31,7 @@ GENERAL STYLES
 /* LOGO */
 
 .logo {
-    margin: 1em;
+    margin: 2em 0;
 }
 
 .logo img {
@@ -48,7 +48,7 @@ GENERAL STYLES
 /* HERO */
 
 .hero {
-    height: 50vh;
+    height: 70vh;
     background-image: url('../images/hero.jpg');
     background-size: cover;
     background-position: center;
@@ -57,7 +57,7 @@ GENERAL STYLES
     z-index: 1;
     text-align: center;
     vertical-align: middle;
-    line-height: 50vh;
+    line-height: 70vh;
     text-transform: uppercase;
 }
 
@@ -85,7 +85,7 @@ GENERAL STYLES
 }
 
 .hero-header {
-    font-size: 4vw;;
+    font-size: 4.5vw;;
     font-family: 'Oswald', sans-serif;
     font-weight: 200;
 }
@@ -280,7 +280,7 @@ iframe {
 /* FOOTER */
 
 footer {
-    background-color: rgb(0, 55, 128);;
+    background-color: rgb(0, 55, 128);
     color: #fff;
     font-family: 'Oswald', sans-serif;
     font-weight: 200;
@@ -393,8 +393,12 @@ CSS GRID FOR MODERN BROWSERS
             display: none;
         }
 
+        .logo {
+            margin: 1em 0;
+        }
+
         .logo img {
-            margin: 0;
+            margin: 0 0 0 2em;
             padding: 0;           
         }
 
@@ -437,6 +441,14 @@ CSS GRID FOR MODERN BROWSERS
             color: #fff;
         }
 
+        #phone-top {
+            background-color: rgb(0, 55, 128) !important;
+            padding: 22px 2em;
+            font-weight: 200;
+            font-size: 0.9em;
+            color: #fff;
+        }
+
         .posts {
             padding: 1em 1em 5em 1em;
         }
@@ -463,6 +475,125 @@ CSS GRID FOR MODERN BROWSERS
         iframe {
             margin: 0;
         }
+    }
+
+    @media screen and (min-width: 800px) and (max-width: 950px) {
+        
+        .site {
+            max-width: none;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 60px auto auto auto auto auto auto auto;
+            margin-top: 2em;
+        }
+
+        .logo {
+            grid-column: 1/4;
+        }
+
+        .navigation {
+            grid-column: 1/4;
+            grid-row: 2/3;
+        }
+
+        .hero {
+            grid-column: 1/4;
+            grid-row: 3/4;
+            min-height: 500px;
+        }
+
+        .item-1 {
+            grid-column: 1/2;
+			grid-row: 4/5;
+        }
+
+        .item-2 {
+            grid-column: 2/3;
+			grid-row: 4/5;
+        }
+
+        .item-3 {
+            grid-column: 3/4;
+			grid-row: 4/5;
+        }
+
+        .offer {
+            grid-column: 1/4;
+			grid-row: 5/6;
+        }
+
+        .icons {
+            display: none;
+        }
+
+        .contact-section {
+            grid-column: 1/4;
+			grid-row: 6/7;
+        }
+
+        .posts {
+            grid-column: 1/4;
+			grid-row: 7/8;
+        }
+
+        .map-section {
+            grid-column: 1/4;
+			grid-row: 8/9;
+        }
+
+        footer {
+            grid-column: 1/4;
+			grid-row: 9/10;
+        }
+
+        /* GENERAL STYLE FIXING */
+
+        .logo {
+            margin: 1em 0;
+        }
+
+        .logo img {
+            width: 35%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .navigation {
+            display: block;
+            margin: 1em 0 0 0;
+            padding: 0;
+        }
+
+        .navigation ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            list-style: none;
+            font-family: 'Oswald', sans-serif;
+            font-weight: 200;
+            text-transform: uppercase;
+            padding-inline-start: 0;
+        }
+
+        .navigation a {
+            text-decoration: none;
+            padding: 22px 1em;
+            background-color: #fff;
+            color: #000;
+        }
+
+        .navigation a:hover {
+            text-decoration: none;
+            padding: 12px 1em 22px 1em;
+            background-color: rgb(0, 55, 128);
+            color: #fff;
+        }
+
+        #phone-top {
+            display: none;
+        }
+
+
     }
 
 }
