@@ -188,7 +188,7 @@ GENERAL STYLES
     content: '';
     display: block;
     background: rgb(0, 0, 0);
-    opacity: 0.4;
+    opacity: 0.6;
     position: absolute;
     top: 0;
     right: 0;
@@ -199,7 +199,7 @@ GENERAL STYLES
 }
 
 .contact-section:hover::before {
-    opacity: 0.6;
+    opacity: 0.8;
 }
 
 .contact {
