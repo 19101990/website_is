@@ -162,7 +162,8 @@ GENERAL STYLES
 /* ICONS */
 
 .icons {
-    padding: 3em 0;
+    display: none;
+    padding: 2em 0 3em 0;
 }
 
 .icons img {
@@ -180,7 +181,7 @@ GENERAL STYLES
     color: rgb(255, 255, 255);
     position: relative;
     z-index: 1;
-    padding: 3em 3em 6em 3em;
+    padding: 1em 1em 2em 1em;
 }
 
 .contact-section::before {
@@ -212,7 +213,7 @@ GENERAL STYLES
 }
 
 .contact-item {
-    margin: 1em;
+    margin: 2em;
 }
 
 .contact i {
@@ -246,7 +247,7 @@ GENERAL STYLES
 .posts {
     background: #fff;
     padding: 1em;
-    margin: 0;
+    margin: 0 0 2em 0;
 }
 
 .post-container {
@@ -267,6 +268,19 @@ GENERAL STYLES
     font-weight: 200;
 }
 
+.posts-button {
+    margin-top: 1em;
+}
+
+.btn-big {
+    text-decoration: none;
+    color: #fff;
+    padding: 1em 3em;
+    margin-top: 2em;
+    background-color: rgb(0, 55, 128);
+    font-family: 'Oswald', sans-serif;
+}
+
 /* MAP */
 
 .map-wrapper {
@@ -280,19 +294,53 @@ iframe {
 /* FOOTER */
 
 footer {
-    background-color: rgb(0, 55, 128);
+    background-color: rgb(0, 29, 66);
     color: #fff;
     font-family: 'Oswald', sans-serif;
     font-weight: 200;
     font-size: 0.8em;
     text-transform: uppercase;
-    padding: 1em 0 0 0;
+    padding: 1em 0;
     text-align: center;
     line-height: 1em;
 }
 
+.footer-info {
+    background-color: rgb(3, 40, 143);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    padding: 3em;
+}
+
+.footer-info h3 {
+    text-align: center;
+}
+
+.footer-info ul {
+    list-style-type: square;
+}
+
+.footer-info a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 200;
+    font-size: 0.9em;
+}
+
+.footer-info a:hover {
+    text-decoration: underline;
+}
+
+.footer-item-1, .footer-item-2, .footer-item-3 {
+    padding: 1em;
+}
+
 .logo-footer {
-    width: 30vw;
+    width: 350px;
 }
 
 
@@ -308,7 +356,7 @@ CSS GRID FOR MODERN BROWSERS
             max-width: none;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 60px auto auto auto auto auto auto auto;
+            grid-template-rows: 80px auto auto auto auto auto auto auto;
         }
 
         .logo {
@@ -365,9 +413,14 @@ CSS GRID FOR MODERN BROWSERS
 			grid-row: 7/8;
         }
 
-        footer {
+        .footer-info {
             grid-column: 1/4;
 			grid-row: 8/9;
+        }
+
+        footer {
+            grid-column: 1/4;
+			grid-row: 9/10;
         }
 
         /* CSS GRID FOR POSTS */
@@ -404,6 +457,7 @@ CSS GRID FOR MODERN BROWSERS
 
         .icons {
             padding: 4em 0;
+            display: block;
         }
 
         .icons img {
@@ -421,6 +475,7 @@ CSS GRID FOR MODERN BROWSERS
             display: flex;
             flex-wrap: wrap;
             justify-content: flex-end;
+            align-items: center;
             list-style: none;
             font-family: 'Oswald', sans-serif;
             font-weight: 200;
@@ -429,21 +484,21 @@ CSS GRID FOR MODERN BROWSERS
 
         .navigation a {
             text-decoration: none;
-            padding: 22px 1em;
+            padding: 37px 1em;
             background-color: rgb(193, 220, 255);
             color: #000;
         }
 
         .navigation a:hover {
             text-decoration: none;
-            padding: 22px 1em;
+            padding: 37px 1em;
             background-color: rgb(0, 55, 128);
             color: #fff;
         }
 
         #phone-top {
             background-color: rgb(0, 55, 128) !important;
-            padding: 22px 2em;
+            padding: 37px 2em;
             font-weight: 200;
             font-size: 0.9em;
             color: #fff;
@@ -454,17 +509,17 @@ CSS GRID FOR MODERN BROWSERS
         }
 
         .item-1:hover {
-            background-color: rgb(160, 193, 255);
+            background-color: rgb(0, 14, 39);
             transition: all ease 1500ms;
         }
         
         .item-2:hover {
-            background-color: rgb(160, 193, 255);
+            background-color: rgb(0, 14, 39);
             transition: all ease 1500ms;
         }
         
         .item-3:hover {
-            background-color: rgb(160, 193, 255);
+            background-color: rgb(0, 14, 39);
             transition: all ease 1500ms;
         }
 
@@ -541,9 +596,14 @@ CSS GRID FOR MODERN BROWSERS
 			grid-row: 8/9;
         }
 
-        footer {
+        .footer-info {
             grid-column: 1/4;
 			grid-row: 9/10;
+        }
+
+        footer {
+            grid-column: 1/4;
+			grid-row: 10/11;
         }
 
         /* GENERAL STYLE FIXING */
